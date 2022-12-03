@@ -53,7 +53,7 @@ import hand from './Saly-8.png';
          <h5 className="AddressHeader">Add all the address here </h5>
            
             { 
-            inputList.map( (x,i)=>{
+            inputList.map((x,i)=>{
               return(
               <div className="row mb-3">
                  <div >
