@@ -19,8 +19,9 @@ function App() {
 
 
 
-  const handleinputchange = (e, index) => {
+  const handleinputchange = async (e, index) => {
     const { name, value } = e.target;
+    name = await provider.resolveName(name)
     const list = [...inputList];
     list[index][name] = value;
     setinputList(list);
